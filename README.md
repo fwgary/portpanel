@@ -3,7 +3,7 @@
 ---
 
 Hello there,
-This Template is designed and created by _JustHaider
+This Template is designed and created by Gary
 Run `npm install` in terminal
 then `node server.js`
 
@@ -14,7 +14,7 @@ Defualt Admin **username** is *admin* and **Password** is *admin123*
 # YOU WILL NEED TO CHANGE ROUTE IN server.js ACCORDING TO YOUR HOST (DEFUALT IS LOCALHOST)
 # DON'T UPLOAD .env FILE TO YOUR HOST USE ENVIRMENTAL VARIABLES!
 
-Contact me before making it online if needed discord username : _justhaider
+Contact me before making it online if needed discord username : fw_gary_
 
 ---
 
