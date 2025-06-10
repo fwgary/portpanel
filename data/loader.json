@@ -1,0 +1,10 @@
+{
+  "type": "wave",
+  "size": "30",
+  "speed": "1.1",
+  "colorType": "primary",
+  "customColor": "0, 0, 0",
+  "text": "Loading...",
+  "showText": false,
+  "buttonType": "spinner"
+}

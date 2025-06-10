@@ -1,0 +1,114 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(var(--background-primary-r), var(--background-primary-g), var(--background-primary-b));
+  box-shadow: var(--shadow-xl);
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl);
+  justify-content: center;
+  background-color: rgb(var(--background-color-r), var(--background-color-g), var(--background-color-b));
+}
+
+.login-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.login-header h1 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+.login-header p {
+  color: var(--gray-600);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--gray-600);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+}
+
+.back-link i {
+  margin-right: var(--spacing-xs);
+  font-size: var(--font-size-md);
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.login-footer {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  color: var(--gray-500);
+  font-size: var(--font-size-sm);
+}
+
+.login-footer p {
+  margin-bottom: var(--spacing-xs);
+}
+
+.login-image {
+  flex: 1.5;
+  position: relative;
+  background-color: var(--gray-100);
+  overflow: hidden;
+  display: none;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-xl);
+}
+
+.overlay-content {
+  max-width: 80%;
+}
+
+.overlay-content h2 {
+  font-size: var(--font-size-4xl);
+  color: var(--white);
+  margin-bottom: var(--spacing-md);
+}
+
+.overlay-content p {
+  font-size: var(--font-size-lg);
+  color: var(--gray-200);
+}
+
+@media (min-width: 768px) {
+  .login-image {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-form-container {
+    padding: var(--spacing-lg);
+  }
+}

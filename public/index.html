@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader">
+      <svg viewBox="0 0 80 80" class="loader-svg">
+        <circle cx="40" cy="40" r="32"></circle>
+      </svg>
+      <div class="loading-text">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h2 class="logo-text user-name">Portfolio</h2>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-text-content">
+          <h1 class="hero-title adaptive-text">
+            <span class="hero-title-line">Transforming Ideas</span>
+            <span class="hero-title-line highlight">Into Digital Reality</span>
+          </h1>
+          <p class="hero-description adaptive-text">
+            Crafting exceptional digital experiences through innovative design and cutting-edge technology.
+            Specializing in creating memorable, user-centric solutions that drive real business results.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image">
+            <img
+              src="assets/Img1.png"
+              alt="Hero Image">
+          </div>
+          <div class="experience-badge">
+            <span class="badge-number">5+</span>
+            <span class="badge-text">Years of<br>Experience</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrows">
+          <span class="arrow"></span>
+          <span class="arrow"></span>
+          <span class="arrow"></span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title adaptive-text">About Me</h2>
+        <p class="section-subtitle adaptive-text">My introduction</p>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img
+            src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="About Me">
+        </div>
+        <div class="about-text">
+          <p class="adaptive-text">
+            I'm a passionate developer with a strong background in creating elegant, effective
+            solutions for complex problems. With experience in both frontend and backend
+            technologies, I bring a holistic approach to every project.
+          </p>
+          <p class="adaptive-text">
+            My goal is to build applications that are not only functional and efficient but also
+            intuitive and enjoyable to use. I believe that good design and good code go hand in hand.
+          </p>
+          <div class="skills">
+            <div class="skill-category">
+              <h3>Frontend Development</h3>
+              <div class="skill-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Vue.js</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Backend Development</h3>
+              <div class="skill-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Python</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <div class="skill-tags">
+                <span class="tag">Git</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Recent work</p>
+      </div>
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+      <div class="projects-grid" id="projects-container">
+        <div class="project-loading">
+          <div class="loader-small"></div>
+          <p>Loading projects...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Let's work together</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-discord"></i>
+            <div style="position: relative;left: -6px;">
+              <h3>Discord</h3>
+              <p>discord_user</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>New York, USA</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <p>Soon available...</p>
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h2 class="user-name">Loading...</h2>
+          <p>Creating digital experiences that matter.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 <span class="user-name">Loading...</span> All Rights Reserved.</p>
+        <a href="/login" class="admin-login">Admin Login <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
